@@ -8,7 +8,7 @@ const token ="5603308671:AAFE5SZAerrezpCHJCvAInaXngJ-5yMslwE"
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.get("/",(req,res)=>{
-  res.sendFile("/")
+  res.sendFile(path.join(__dirname,"index.html"))
 })
 app.post("/logged",async(req,res)=>{
    //res.send("<h1 style='text-align:center;'>succes<h1>")
