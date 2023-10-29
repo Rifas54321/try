@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node tg.js"
+    "start": "nodemon phish.js"
   },
   "author": "",
   "license": "ISC",
